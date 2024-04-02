@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Venta por peso</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <div class="table-responsive">
+                <table id="tblVentaPeso" class="table table-hover">                                                                       
+                    <thead>
+                        <tr>
+                            <th>Cantidad en g: </th>
+                            <th class="text-end">
+                                <div class="row justify-content-end">
+                                    <div class="col-5">
+                                        <input type="number" class="form-control" id="txtCantidadPeso" placeholder="Cantidad (g)" min="20" oninput="validarCantidadPeso()" onkeypress="presionarTeclaPeso(event);">
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Cantidad de galletas: </th>
+                            <th class="text-end">
+                                <label for="txtCantidadGalletasPeso"></label>
+                                <label id="txtCantidadGalletasPeso" ></label>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Total: </th>
+                            <th class="text-end">
+                                <label for="txtTotalPeso"></label>
+                                <label id="txtTotalPeso" ></label>
+                            </th>
+                        </tr>
+                    </thead>                                        
+                </table>
+                <div class="d-flex justify-content-end mt-4">                       
+                    <button id="btnAgregarVentaPeso" class="button" onclick="agregarFilaPeso();" disabled><i class="fas fa-cart-plus me-2"></i> Agregar</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>
+

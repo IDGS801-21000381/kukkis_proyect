@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Venta por caja</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <div class="table-responsive">
+                <table id="tblVentaCaja" class="table table-hover">                                                                       
+                    <thead>
+                        <tr>
+                            <th>Tipo de caja: </th>
+                            <th class="text-end">
+                                <div class="row justify-content-end">
+                                    <div>
+                                        <input type="radio" id="medioKilo" name="caja" onclick="calcularTotalCaja()">
+                                        <label for="medioKilo">Caja de medio kilo</label>
+
+                                        <input type="radio" id="kilo" name="caja" onclick="calcularTotalCaja()">
+                                        <label for="kilo">Caja de kilo </label>
+                                    </div>                              
+                                </div>
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <th>Cantidad de galletas: </th>
+                            <th class="text-end">
+                                <label for="txtCantidadGalletasCaja"></label>
+                                <label id="txtCantidadGalletasCaja" ></label>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Total: </th>
+                            <th class="text-end">
+                                <label for="txtTotalCaja"></label>
+                                <label id="txtTotalCaja" ></label>
+                            </th>
+                        </tr>
+                    </thead>                                        
+                </table>
+                <div class="d-flex justify-content-end mt-4">                       
+                    <button id="btnAgregarVentaCaja" class="button" onclick="agregarFilaCaja();">
+                        <i class="fas fa-cart-plus me-2"></i> Agregar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script>
+            
+        </script>
+    </body>
+</html>

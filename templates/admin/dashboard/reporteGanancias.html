@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Reporte de Ganancias</title>
+        <style>
+            .custom-container {
+                width: 100%;
+            }
+
+            .form-control:focus {
+                outline-color: #0B6138 !important;
+                box-shadow: 0 0 0 0.2rem rgba(11, 97, 56, 0.25) !important;
+            }
+
+            @media (max-width: 768px) {
+                .form-floating .form-control {
+                    font-size: 12px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active ms-4" aria-current="page">
+                    <a class="migas" href="{{ url_for('admin_index') }}" style="color: #000000; font-family: 'Roboto', sans-serif; font-weight: bold;"><br><br><br><br>Home /</a>
+                    <a class="migas" href="#" onclick="cargarModuloReporteGanancias();" style="color: #000000; font-family: 'Roboto', sans-serif; font-weight: bold;">Reporte de Ganancias /</a>
+
+                </li>
+            </ol>
+        </nav>
+        <div class="row mt-2">
+            <div id="divDetalle" class="col">
+                <div class="card">
+                    <div>
+                        <div class="card-header bg-gradient" style="background-color: #b38b60; padding-top: 0px; padding-bottom: 0px;">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center" style="display: flex; justify-content: space-around; width: 100%;">
+                                    <span class="h5 text-white" style="font-family: 'Roboto', sans-serif; font-size: 24px; font-weight: bold;">Reporte de Ganancias</span>
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body" style="background-color: #FAEADA;">
+                        <div class="form">
+                            <div class="row">
+                                <div style="display: flex; justify-content: space-around; width: 100%;">
+                                    <input type="radio" id="dia" name="categoria" onclick="cargarContenidoReporte('dia');">
+                                    <label for="dia">D&iacute;a</label>
+
+                                    <input type="radio" id="semana" name="categoria" onclick="cargarContenidoReporte('semana');">
+                                    <label for="semana">Semana</label>
+
+                                    <input type="radio" id="mes" name="categoria" onclick="cargarContenidoReporte('mes');">
+                                    <label for="mes">Mes</label>
+
+                                    <input type="radio" id="año" name="categoria" onclick="cargarContenidoReporte('año');">
+                                    <label for="año">Año</label>
+                                </div>
+                                <div id="contenedor_Reporte" class="p-2"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+
+
+                            function changeColor(element) {
+                                element.style.borderColor = "#a0794f";
+                            }
+
+        </script>
+    </body>
+</html>

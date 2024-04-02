@@ -1,0 +1,324 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 21 nov. 2023, 13:43:32
+    Author     : emman
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #edc093;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+} 
+
+.imagenLogo {
+    max-width: 100%;
+    height: auto;
+}
+
+.imagen-container {
+    margin-top: 20px; /* Ajusta según sea necesario */
+}
+
+.imagenFondo {
+    max-width: 100%;
+    height: auto;
+}
+
+.title
+{
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    color: #000000;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Ajusta el relleno según sea necesario para dispositivos móviles */
+    }
+
+    .col-md-6 {
+        width: 100%; /* Haz que la columna ocupe todo el ancho en dispositivos móviles */
+        margin-bottom: 20px; /* Añade un margen inferior para separar las columnas en dispositivos móviles */
+    }
+
+    .imagenLogo {
+        width: 100%; /* Haz que la imagen del logo ocupe todo el ancho en dispositivos móviles */
+        max-width: 100%; /* Añade un límite máximo del ancho de la imagen para asegurarte de que no se salga de la pantalla */
+        height: auto; /* Ajusta automáticamente la altura proporcionalmente al ancho */
+    }
+}
+.menuLogin{
+    padding: 20px;
+    text-align: center;
+    border-radius: 0px 0px 50px 50px;
+    
+background: rgba(250,234,218,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(250,234,218,1) 0%, rgba(160,121,79,1) 0%, rgba(250,234,218,1) 0%, rgba(179,139,96,1) 32%, rgba(160,121,79,1) 54%, rgba(160,121,79,1) 76%, rgba(160,121,79,1) 76%, rgba(160,121,79,1) 98%, rgba(160,121,79,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(250,234,218,1)), color-stop(0%, rgba(160,121,79,1)), color-stop(0%, rgba(250,234,218,1)), color-stop(32%, rgba(179,139,96,1)), color-stop(54%, rgba(160,121,79,1)), color-stop(76%, rgba(160,121,79,1)), color-stop(76%, rgba(160,121,79,1)), color-stop(98%, rgba(160,121,79,1)), color-stop(100%, rgba(160,121,79,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(250,234,218,1) 0%, rgba(160,121,79,1) 0%, rgba(250,234,218,1) 0%, rgba(179,139,96,1) 32%, rgba(160,121,79,1) 54%, rgba(160,121,79,1) 76%, rgba(160,121,79,1) 76%, rgba(160,121,79,1) 98%, rgba(160,121,79,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(250,234,218,1) 0%, rgba(160,121,79,1) 0%, rgba(250,234,218,1) 0%, rgba(179,139,96,1) 32%, rgba(160,121,79,1) 54%, rgba(160,121,79,1) 76%, rgba(160,121,79,1) 76%, rgba(160,121,79,1) 98%, rgba(160,121,79,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(250,234,218,1) 0%, rgba(160,121,79,1) 0%, rgba(250,234,218,1) 0%, rgba(179,139,96,1) 32%, rgba(160,121,79,1) 54%, rgba(160,121,79,1) 76%, rgba(160,121,79,1) 76%, rgba(160,121,79,1) 98%, rgba(160,121,79,1) 100%);
+background: radial-gradient(ellipse at center, rgba(250,234,218,1) 0%, rgba(160,121,79,1) 0%, rgba(250,234,218,1) 0%, rgba(179,139,96,1) 32%, rgba(160,121,79,1) 54%, rgba(160,121,79,1) 76%, rgba(160,121,79,1) 76%, rgba(160,121,79,1) 98%, rgba(160,121,79,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faeada', endColorstr='#a0794f', GradientType=1 );
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #8B0000; /* Color guinda de fondo */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fondoMenu {
+    background-color: #edc093;
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.navbar {
+    background-color: #a0794f;
+}
+.navbar .navbar-brand {
+    color: #FAEADA;
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: #a0794f;
+}
+.navbar .navbar-nav .nav-link {
+    color: #FAEADA;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+    color: #fff;
+}
+.navbar .navbar-toggler {
+    border-color: #FAEADA;
+}
+.navbar .navbar-toggler-icon {
+    background-color: #FAEADA;
+}
+@media (min-width: 992px) {
+    .navbar .navbar-nav {
+        display: flex;
+        justify-content: center;
+    }
+    .navbar .navbar-nav .nav-item {
+        text-align: center;
+    }
+}
+
+.btn-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.floating-button {
+    position: fixed;
+    top: 80px; /* Ajusta la posición vertical */
+    right: 20px; /* Ajusta la posición horizontal */
+    background-color: #a0794f; /* Color de fondo del botón */
+    color: #fff; /* Color del icono */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.floating-button:hover {
+    background-color: #a0794f; /* Cambiar el color de fondo al pasar el cursor */
+}
+.migas:hover
+{
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Estilos para los botones en línea */
+.botones-en-linea {
+  display: flex; /* Coloca los elementos en una fila */
+}
+
+/* Estilos para cada botón circular */
+.boton-circular {
+  width: 120px;
+  height: 120px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 10px;
+}
+
+
+/* Estilos para el margen alrededor del círculo grande */
+.boton-circular::before {
+  content: "";
+  width: calc(100% - 8px); /* Ajuste del ancho considerando el grosor del borde */
+  height: calc(100% - 8px); /* Ajuste del alto considerando el grosor del borde */
+  border: 4px solid #8B0000; /* Cambio del grosor del borde a 4px */
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0; /* Cambio de -1 a 1 para que esté delante de la imagen */
+}
+
+/* Estilos para la imagen dentro de cada botón */
+.boton-circular img {
+  width: 80%;
+  height: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.info-galleta {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #8B0000;
+  padding: 5px;
+  border-radius: 5px;
+}
+        .boton-circular:hover + .info-galleta {
+            display: block;
+        }
+/* Media query para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .botones-en-linea {
+    flex-wrap: wrap; /* Permite que los botones se envuelvan en una nueva línea */
+  }
+
+  .boton-circular {
+    flex: 0 0 calc(33.33% - 20px); /* Hace que cada botón ocupe 33.33% del ancho del contenedor y deja un margen de 20px entre ellos */
+    margin: 10px; /* Margen entre los botones */
+  }
+}
+/* Estilos para el círculo más pequeño con el signo "+" */
+.circulo-mas {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 5px; /* Ajusta este valor según sea necesario */
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    display: inline-flex; /* Cambiado a flex para acomodarse en fila */
+    align-items: center; /* Centra verticalmente el contenido */
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    margin-right: 20px; /* Espacio entre elementos */
+}
+
+input[type="radio"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #edc093;
+    margin-right: 10px;
+}
+
+input[type="radio"]:checked + label:before {
+    background-color: #FD9E80;
+}
+
+@media (max-width: 768px) {
+    input[type="radio"] + label {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+.fondoCardBodyLogin
+{
+    background-color: #FAEADA;
+}
+
+/* Estilos para pantallas grandes (mayores de 768px) */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15cm; /* Tamaño de 10 cm */
+    height: 9cm; /* Tamaño de 10 cm */
+    background-color: #FAEADA; /* Fondo #E0F1DE */
+    border: 2px solid #a0794f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 9999;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Estilos para pantallas pequeñas (768px o menos) */
+@media (max-width: 768px) {
+    .modal {
+        width: 90%; /* Utiliza el 90% del ancho de la pantalla */
+        height: auto; /* Se ajusta automáticamente a la altura del contenido */
+    }
+}
+.imagenGrafica {
+    padding: 10px; /* Ajusta el valor según la cantidad de espacio que desees en todos los lados */
+}
+
